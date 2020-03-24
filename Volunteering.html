@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Volunteering Times</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>	
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>  
+<body>	  
+<h1>Scheduling and Availability</h1>
+
+<iframe src="https://calendar.google.com/calendar/embed?src=apichar1%40asu.edu&ctz=America%2FPhoenix" style="border: 0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
+<br>
+<h2>Address & Hours</h2>
+<p>Location: 609 E Alameda ave. Tempe, AZ</p><br>
+<p>Hours: Open M-F, 8am-5pm</p><br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        var div = $("div");  
+        div.animate({left: '100px'}, "slow");
+        div.animate({fontSize: '3em'}, "slow");
+    });
+});
+</script> 
+</head>
+<body>
+
+<button>Click for our Office Number!</button>
+
+<p>Thank you<p>
+
+<div style="background:#6495ED;height:100px;width:200px;position:absolute;">480-616-9636</div>
+
+<a href="Home.html">Home</a> | <a href="WhyUsFp.html">Why Us?</a> | Volunteering | <a href="donate.html">Donate</a>
+</body>
+</html>
